@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
+
+    <main>
+        <section class="calc-container">
+            <!--SUMA-->
+            <article class="calc-container__suma">
+                <h2>SUMA</h2>
+                <label for="">
+                    <input id="sumaVar1" placeholder="valor 1" type="number">
+                </label>
+                <label for="">
+                    <input id="sumaVar2" placeholder="valor 2" type="number">
+                </label>
+                <button onclick="suma()">Sumar</button>
+                <p class="restSuma__parrafo1">El resultado es:</p>
+                <div class="calc-container__restSuma">
+                    <p class="restSuma__parrafo2"></p>
+                </div>
+            </article>
+        
+            <!--RESTA-->
+            <article class="calc-container__resta">
+                <h2>RESTA</h2>
+                <label for="">
+                    <input id="restaVar1" placeholder="valor 1" type="number">
+                </label>
+                <label for="">
+                    <input id="restaVar2" placeholder="valor 2" type="number">
+                </label>
+                <button onclick="resta()">Restar</button>
+                <p class="restResta__parrafo1">El resultado es:</p>
+                <div class="calc-container__restResta">
+                    <p class="restResta__parrafo2"></p>
+                </div>
+            </article>
+        
+            <!--MULTIPLICACIÓN-->
+            <article class="calc-container__mult">
+                <h2>MULTIPLICACIÓN</h2>
+                <label for="">
+                    <input id="multVar1" placeholder="valor 1" type="number">
+                </label>
+                <label for="">
+                    <input id="multVar2" placeholder="valor 2" type="number">
+                </label>
+                <button onclick="mult()">Multiplicar</button>
+                <p class="restMult__parrafo1">El resultado es:</p>
+                <div class="calc-container__restMult">
+                    <p class="restMult__parrafo2"></p>
+                </div>
+            </article>
+        
+            <!--DIVISIÓN-->
+            <article class="calc-container__div">
+                <h2>DIVISIÓN</h2>
+                <label for="">
+                    <input id="divVar1" placeholder="valor 1" type="number">
+                </label>
+                <label for="">
+                    <input id="divVar2" placeholder="valor 2" type="number">
+                </label>
+                <button onclick="div()">Dividir</button>
+                <p class="restDiv__parrafo1">El resultado es:</p>
+                <div class="calc-container__restDiv">
+                    <p class="restDiv__parrafo2"></p>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
